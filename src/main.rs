@@ -142,10 +142,10 @@ fn main() -> io::Result<()> {
         if processing && !line.is_empty() {
             processing_files.push(line.trim());
             let ddat5 = Utc::now();
-            println!("[{} INFO] {} - will process: {}", ddat5, &txid, line);
+            println!("[{} INFO] {} - Will process: {}", ddat5, &txid, line);
         } else {
             let ddat6 = Utc::now();
-            println!("[{} INFO] {} - file list loaded.", ddat6, &txid);
+            println!("[{} INFO] {} - File list loaded.", ddat6, &txid);
         }
 
     }
